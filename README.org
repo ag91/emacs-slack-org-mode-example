@@ -1,0 +1,8 @@
+* Summary
+:PROPERTIES:
+:CREATED:  [2020-08-15 Sat 00:00]
+:END:
+
+This is just a tiny piece of code that shows how to combine
+[[https://github.com/yuya373/emacs-slack][emacs-slack]] and org-mode to obtain trackable and asynchronous chat
+management through your Org Agenda.
