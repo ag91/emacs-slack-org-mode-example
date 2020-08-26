@@ -34,9 +34,11 @@
        (format
         "%s %s :slack:"
         (plist-get info :title)
-        (plist-get info :message))
+        (s-truncate 127 (plist-get info :message)))
        "\n"
        (format "\n <%s>" (format-time-string "%Y-%m-%d %H:%M"))
+       "\n"
+       (plist-get info :message)
        "\n")
       nil
       "~/yourOrgAgendaFilesFolder/Slack.org"
