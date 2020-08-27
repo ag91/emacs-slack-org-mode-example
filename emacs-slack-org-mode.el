@@ -26,6 +26,7 @@
    "Make Org headings for messages I receive - Style"
    :notifier
    (lambda (info)
+     (when (get-buffer "Slack.org") (with-current-buffer "Slack.org" (save-buffer)))
      (write-region
       (s-concat
        "* TODO "
